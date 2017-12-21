@@ -20,7 +20,7 @@ function draw() {
     stroke(r, g, b, 50);
     strokeWeight(4);
     fill(r, g, b, 100);
-    ellipse(width/2, width/2, 150, 150);
+    ellipse(width/2, height/2, 150, 150);
     //rect(50,50,20,40);
     //line(25,36,379,250);
     //arc(50, 50, 80, 80, PI/3, PI-.5, OPEN);
