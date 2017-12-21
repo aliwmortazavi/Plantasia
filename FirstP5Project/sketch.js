@@ -20,7 +20,7 @@ function draw() {
     stroke(r, g, b, 50);
     strokeWeight(4);
     fill(r, g, b, 100);
-    ellipse(width/2, height/2, 150, 150);
+    ellipse(window.innerWidth/2, window.innerHeight/2, 150, 150);
     console.log("draw funciton");
 }
 
@@ -31,7 +31,7 @@ function keyPressed() {
     stroke(r, g, b, 50);
     strokeWeight(4);
     fill(r, g, b, 100);
-    ellipse(width/2, height/2, 150, 150);
+    ellipse(window.innerWidth/2, window.innerHeight/2, 150, 150);
     mySound.play();
     
 }
