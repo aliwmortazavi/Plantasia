@@ -4,7 +4,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(900, 600);
+    createCanvas(window.innerWidth, window.innerHeight);
     print("setup function");
     r = random(255);
     g = random(255);
@@ -34,9 +34,17 @@ function keyPressed() {
     stroke(r, g, b, 50);
     strokeWeight(4);
     fill(r, g, b, 100);
-    ellipse(320, 160, 100, 100);
+    ellipse(width/2, height/2, 100, 100);
     mySound.play();
     
+}
+
+window.onresize = function() {
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  canvas.size(w,h);
+  width = w;
+  height = h;
 }
 
 
