@@ -4,7 +4,7 @@ function preload() {
 }
 
 function setup() {
-    createCanvas(640, 320);
+    createCanvas(900, 600);
     print("setup function");
     r = random(255);
     g = random(255);
@@ -18,7 +18,7 @@ function draw() {
     stroke(r, g, b, 50);
     strokeWeight(4);
     fill(r, g, b, 100);
-    ellipse(320, 160, 100, 100);
+    ellipse(450, 300, 150, 150);
     //rect(50,50,20,40);
     //line(25,36,379,250);
     //arc(50, 50, 80, 80, PI/3, PI-.5, OPEN);
