@@ -1,10 +1,12 @@
+var canvas;
+
 function preload() {
   soundFormats('mp3', 'ogg');
   mySound = loadSound('robot.mp3');
 }
 
 function setup() {
-    createCanvas(window.innerWidth, window.innerHeight);
+    canvas = createCanvas(window.innerWidth, window.innerHeight);
     print("setup function");
     r = random(255);
     g = random(255);
