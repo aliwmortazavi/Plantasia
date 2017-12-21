@@ -6,7 +6,7 @@ function preload() {
 }
 
 function setup() {
-    canvas = createCanvas(window.innerWidth, window.innerHeight);
+    canvas = createCanvas(window.displayWidth, window.displayHeight);
     print("setup function");
     r = random(255);
     g = random(255);
@@ -20,7 +20,7 @@ function draw() {
     stroke(r, g, b, 50);
     strokeWeight(4);
     fill(r, g, b, 100);
-    ellipse(450, 300, 150, 150);
+    ellipse(width/2, width/2, 150, 150);
     //rect(50,50,20,40);
     //line(25,36,379,250);
     //arc(50, 50, 80, 80, PI/3, PI-.5, OPEN);
@@ -42,8 +42,8 @@ function keyPressed() {
 }
 
 window.onresize = function() {
-  var w = window.innerWidth;
-  var h = window.innerHeight;
+  var w = window.displayWidth;
+  var h = window.displayHeight;
   canvas.size(w,h);
   width = w;
   height = h;
