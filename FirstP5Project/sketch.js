@@ -20,7 +20,7 @@ function draw() {
     stroke(r, g, b, 50);
     strokeWeight(4);
     fill(r, g, b, 100);
-    ellipse(window.innerWidth/2, 2, 150, 150);
+    ellipse(width/2, height/2, 150, 150);
     console.log("draw funciton");
 }
 
